@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Computador</title>
+</head>
+<body>
+    <h1>Cadastro de Computador</h1>
+    <form action="index.php" method="post"></form>
+        <fieldset>
+            <legend>Formulário</legend>
+            <label for="id">Id:</label>
+            <input type="text" name="id" readonly value="{id}">
+            <label for="sistema_operacional">Sistema Operacional:</label>
+            <input type="text" name="sistema_operacional" value="{sistema_operacional}">
+            <label for="marca">Marca:</label>
+            <input type="text" name="marca" value="{marca}">
+            <label for="possui_placa_video">Possui Placa de Vídeo:</label>
+            <select name="possui_placa_video">
+                <option value="1" {possui_placa_video_1}>Sim</option>
+                <option value="0" {possui_placa_video_0}>Não</option>
+            </select>
+            <label for="memoria_ram_gb">Memória RAM (GB):</label>
+            <input type="number" name="memoria_ram_gb" value="{memoria_ram_gb}">
+            <label for="cpu">CPU:</label>
+            <input type="text" name="cpu" value="{cpu}">
+            <label for="ano">Ano:</label>
+            <input type="number" name="ano" value="{ano}">
+            <label for="imagem_url">URL da Imagem:</label>
+            <input type="text" name="imagem_url" value="{imagem_url}">
+            <button type="submit" name="acao" value="salvar">Salvar</button>
+            <button type="submit" name="acao" value="excluir">Excluir</button>
+            <input type="reset" value="Cancelar">
+        </fieldset>
+    </form>
+</body>
+</html>
